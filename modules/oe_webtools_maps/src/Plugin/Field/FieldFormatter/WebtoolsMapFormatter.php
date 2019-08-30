@@ -65,6 +65,8 @@ class WebtoolsMapFormatter extends FormatterBase {
     foreach ($items as $delta => $item) {
       $element[$delta] = [
         '#theme' => 'oe_webtools_maps_map',
+        '#field_item' => $item,
+        '#entity' => $item->getEntity(),
         '#latitude' => $item->get('lat')->getValue(),
         '#longitude' => $item->get('lon')->getValue(),
         '#zoom_level' => $this->getSetting('zoom_level'),

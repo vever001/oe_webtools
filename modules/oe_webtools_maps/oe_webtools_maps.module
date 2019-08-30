@@ -14,6 +14,8 @@ function oe_webtools_maps_theme($existing, $type, $theme, $path) {
   return [
     'oe_webtools_maps_map' => [
       'variables' => [
+        'field_item' => NULL,
+        'entity' => NULL,
         'zoom_level' => NULL,
         'longitude' => NULL,
         'latitude' => NULL,
